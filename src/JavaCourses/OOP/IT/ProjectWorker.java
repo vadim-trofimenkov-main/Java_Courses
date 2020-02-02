@@ -1,5 +1,8 @@
 package JavaCourses.OOP.IT;
 
-abstract class ProjectWorker {
-public EPosition ePosition;
+abstract class ProjectWorker extends ITWorker {
+    ProjectWorker(EPosition ePosition) {
+    }
+    ProjectWorker() {
+    }
 }
