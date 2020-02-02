@@ -6,7 +6,6 @@ public class Tester extends ProjectWorker implements ITester {
     }
 
     Tester() {
-
     }
 
     @Override
