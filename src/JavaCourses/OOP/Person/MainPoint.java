@@ -1,4 +1,4 @@
-package JavaCourses.OOP;
+package JavaCourses.OOP.Person;
 
 public class MainPoint {
     public static void main(String[] args) {

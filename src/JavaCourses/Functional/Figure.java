@@ -1,4 +1,4 @@
-package JavaCourses;
+package JavaCourses.Functional;
 
 public class Figure {
     public static void main(String[] args) {

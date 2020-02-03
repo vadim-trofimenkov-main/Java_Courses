@@ -1,4 +1,4 @@
-package JavaCourses.OOP;
+package JavaCourses.OOP.Arena;
 
 public class Gladiator extends Warrior {
     private int defence = 35;

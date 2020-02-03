@@ -1,4 +1,4 @@
-package JavaCourses.OOP;
+package JavaCourses.OOP.Box;
 
 public class Cat {
     private int age;

@@ -1,4 +1,4 @@
-package JavaCourses.OOP;
+package JavaCourses.OOP.Box;
 
 import java.util.Random;
 

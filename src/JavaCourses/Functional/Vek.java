@@ -1,4 +1,4 @@
-package JavaCourses;
+package JavaCourses.Functional;
 
 import java.util.Random;
 import java.util.Scanner;

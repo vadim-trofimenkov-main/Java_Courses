@@ -1,4 +1,4 @@
-package JavaCourses.OOP;
+package JavaCourses.OOP.Arena;
 
 public class FireMage extends Magician {
     public FireMage() {

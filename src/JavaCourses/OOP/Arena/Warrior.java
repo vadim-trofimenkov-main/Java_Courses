@@ -1,6 +1,6 @@
-package JavaCourses.OOP;
+package JavaCourses.OOP.Arena;
 
-import static JavaCourses.Util.RandomFrom1to100;
+import static JavaCourses.Functional.Util.RandomFrom1to100;
 
 public abstract class Warrior {
     protected String name;

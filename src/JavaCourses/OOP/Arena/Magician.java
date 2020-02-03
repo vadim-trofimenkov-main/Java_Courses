@@ -1,4 +1,4 @@
-package JavaCourses.OOP;
+package JavaCourses.OOP.Arena;
 
 public class Magician extends Warrior{
     protected int mana;

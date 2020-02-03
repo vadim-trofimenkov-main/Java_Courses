@@ -1,4 +1,4 @@
-package JavaCourses.OOP;
+package JavaCourses.OOP.Arena;
 
 public class Arena {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package JavaCourses.OOP;
+package JavaCourses.OOP.Arena;
 
 public class Squire extends Warrior {
     public Squire() {

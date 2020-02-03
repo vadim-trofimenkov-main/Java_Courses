@@ -1,6 +1,6 @@
 package JavaCourses.Arrays;
 
-import JavaCourses.Util;
+import JavaCourses.Functional.Util;
 
 public class DoubleArrayTask extends Util {
     public static void main(String[] args) {
