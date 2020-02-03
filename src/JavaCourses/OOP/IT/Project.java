@@ -1,3 +1,4 @@
+
 package JavaCourses.OOP.IT;
 
 public class Project {
@@ -33,4 +34,3 @@ public class Project {
         project.workingDay();
     }
 }
-

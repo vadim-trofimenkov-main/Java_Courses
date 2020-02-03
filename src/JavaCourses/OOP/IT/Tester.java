@@ -1,3 +1,4 @@
+
 package JavaCourses.OOP.IT;
 
 public class Tester extends ProjectWorker implements ITester {
@@ -13,3 +14,4 @@ public class Tester extends ProjectWorker implements ITester {
         System.out.println("Тестирую");
     }
 }
+
