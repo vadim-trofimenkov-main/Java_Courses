@@ -22,31 +22,28 @@ class BaseLogger extends AbstractLogger {
             e.printStackTrace();
         }
     }
-
-    @Override
-    String constructLogMessage(String message) {
+    private String dataCreation(){
         String pattern = "dd/MM/yyyy";
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
         String date = simpleDateFormat.format(new Date());
-        message = date + " " + LogType.INFO + ": " + message;
+        return date;
+    }
+    @Override
+    String constructLogMessage(String message) {
+        message = dataCreation() + " " + LogType.INFO + ": " + message;
         return message;
     }
 
     @Override
     String constructLogMessage(Throwable t) {
-        String pattern = "dd/MM/yyyy";
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
-        String date = simpleDateFormat.format(new Date());
-        String message = date + " " + LogType.ERROR + ": " + t;
+        String message = dataCreation() + " " + LogType.ERROR + ": " + t;
         return message;
     }
 
     @Override
     String constructLogMessage(LogType type, String message) {
-        String pattern = "dd/MM/yyyy";
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
-        String date = simpleDateFormat.format(new Date());
-        message = date + " " + type + ": " + message;
+
+        message = dataCreation() + " " + type + ": " + message;
         return message;
     }
 }
