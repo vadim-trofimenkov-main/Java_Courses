@@ -7,7 +7,7 @@ public class Box {
     private boolean opened;
     private int catAliveProbability;
 
-    public Box(Cat cat) {
+    private Box(Cat cat) {
         this.cat = cat;
     }
 
@@ -37,20 +37,20 @@ public class Box {
         this.catAliveProbability = deathProbability;
     }
 
-    public void catAliveProbability() {
-        if ((opened == true) && (cat.alive == true)) {
+    private void catAliveProbability() {
+        if ((opened) && (cat.alive)) {
             catAliveProbability = 100;
         }
-        if ((opened == true) && (cat.alive == false)) {
+        if ((opened) && (!cat.alive)) {
             catAliveProbability = 0;
         }
-        if ((cat.alive == true) && (opened == false)) {
+        if ((cat.alive) && (!opened)) {
             catAliveProbability = 50;
         }
         System.out.println("Cat Alive Probability: " + catAliveProbability);
     }
 
-    public void openBox() {
+    private void openBox() {
         opened = true;
         System.out.println("Box is opened!");
         Random random = new Random();

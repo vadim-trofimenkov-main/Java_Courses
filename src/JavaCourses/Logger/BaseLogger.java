@@ -8,11 +8,9 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 class BaseLogger extends AbstractLogger {
-    BaseLogger(OutputStream[] out) {
-    }
 
     @Override
-    void writeLog(String message) {
+    protected void writeLog(String message) {
         File logFile = new File("logFile");
         byte[] bytes;
         bytes = message.getBytes();
@@ -29,19 +27,19 @@ class BaseLogger extends AbstractLogger {
         return date;
     }
     @Override
-    String constructLogMessage(String message) {
+    protected String constructLogMessage(String message) {
         message = dataCreation() + " " + LogType.INFO + ": " + message;
         return message;
     }
 
     @Override
-    String constructLogMessage(Throwable t) {
+    protected String constructLogMessage(Throwable t) {
         String message = dataCreation() + " " + LogType.ERROR + ": " + t;
         return message;
     }
 
     @Override
-    String constructLogMessage(LogType type, String message) {
+    protected String constructLogMessage(LogType type, String message) {
 
         message = dataCreation() + " " + type + ": " + message;
         return message;

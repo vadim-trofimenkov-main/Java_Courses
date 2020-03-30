@@ -4,10 +4,10 @@ import java.io.*;
 
 abstract class AbstractLogger implements Logger {
 
-    abstract void writeLog(String message);
-    abstract String constructLogMessage(String message);
-    abstract String constructLogMessage(Throwable t);
-    abstract String constructLogMessage(LogType type, String message);
+    protected abstract void writeLog(String message);
+    protected abstract String constructLogMessage(String message);
+    protected abstract String constructLogMessage(Throwable t);
+    protected abstract String constructLogMessage(LogType type, String message);
     @Override
     public void log(String message) throws IOException {
         String newMessage = constructLogMessage(message);

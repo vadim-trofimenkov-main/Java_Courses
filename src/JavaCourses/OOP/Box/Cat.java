@@ -6,7 +6,7 @@ public class Cat {
     private int height;
     boolean alive;
 
-    public Cat(String name, int age, int height, boolean alive) {
+    Cat(String name, int age, int height, boolean alive) {
         this.name = name;
         this.age = age;
         this.height = height;
@@ -21,7 +21,7 @@ public class Cat {
         this.name = name;
     }
 
-    public int getAge() {
+    int getAge() {
         return age;
     }
 
@@ -29,7 +29,7 @@ public class Cat {
         this.age = age;
     }
 
-    public int getHeight() {
+    int getHeight() {
         return height;
     }
 
@@ -37,7 +37,7 @@ public class Cat {
         this.height = height;
     }
 
-    public boolean isAlive() {
+    boolean isAlive() {
         return alive;
     }
 
