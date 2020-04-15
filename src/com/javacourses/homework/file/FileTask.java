@@ -1,4 +1,4 @@
-package com.javacourses.lesson_practice.file;
+package com.javacourses.homework.file;
 
 import java.io.*;
 import java.util.Scanner;
