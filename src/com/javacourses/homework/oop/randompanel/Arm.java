@@ -6,4 +6,9 @@ public class Arm extends Controller implements Pullable {
     public void pull() {
         System.out.println("PULLED");
     }
+
+    @Override
+    void start() {
+        pull();
+    }
 }

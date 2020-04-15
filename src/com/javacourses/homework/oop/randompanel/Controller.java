@@ -1,5 +1,5 @@
 package com.javacourses.homework.oop.randompanel;
 
-public class Controller {
-
+abstract class Controller {
+    abstract void start();
 }

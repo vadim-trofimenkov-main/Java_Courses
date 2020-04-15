@@ -6,4 +6,9 @@ public class BigRedButton extends Controller implements Clickable {
         System.out.println("NOOOOOO, WHY DID U DO THAT????");
         System.exit(-1);
     }
+
+    @Override
+    void start() {
+        click();
+    }
 }

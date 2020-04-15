@@ -13,4 +13,19 @@ public class ControlPanel {
             new Button(),
             new Arm()
     };
+
+    void start() {
+        System.out.println("Нажимаю все кнопки, кроме Красной");
+        for (Controller controller : controllers) {
+            if (controller.getClass().getName().equals("com.javacourses.homework.oop.randompanel.Button")) {
+                controller.start();
+            }
+        }
+        System.out.println("Тяну все рычаги");
+        for (Controller controller : controllers) {
+            if (controller.getClass().getName().equals("com.javacourses.homework.oop.randompanel.Arm")) {
+                controller.start();
+            }
+        }
+    }
 }

@@ -5,4 +5,9 @@ public class Button extends Controller implements Clickable {
     public void click() {
         System.out.println("OK");
     }
+
+    @Override
+    void start() {
+        click();
+    }
 }
