@@ -1,6 +1,8 @@
 package com.javacourses.homework.functional_programming.arrays;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.Random;
 
 public class ArraysTask {
@@ -15,11 +17,14 @@ public class ArraysTask {
     // getMaxElement(int[] array) - получить максимальный элемент массива
     // getMinElement(int[] array) - получить минимальный элемент массива
     // getAllElementsBetweenMaxAndMin(int[] array) - Получить все элементы между максимальным и минимальным элементами
+    //arrayWithoutDuplicates(int[] array) - Вывести числа, не повторяются в массиве
+    //getArrayWithoutRange(int[] array) Написать метод, удаляющий из массива все значения от n1 до n2,
+    // то есть метод возвращающий массив без этих элементов.
     private static final int[] ARRAY = new int[10];
 
     public static void main(String[] args) {
         random(ARRAY);
-        getAllElementsBetweenMaxAndMin(ARRAY);
+       getArrayWithoutRange(ARRAY, 3, 7);
     }
 
     private static int[] random(int[] array) {
@@ -139,5 +144,40 @@ public class ArraysTask {
                 System.out.print(array[i] + " ");
             }
         }
+    }
+
+    private static void arrayWithoutDuplicates(int[] array) {
+        boolean isUnique;
+        for (int j = 0; j < array.length; j++) {
+            isUnique = true;
+            for (int i = 0; i < array.length; i++) {
+                if ((array[j] == array[i]) & (j != i)) {
+                    isUnique = false;
+                    break;
+                }
+            }
+            if (isUnique) {
+                System.out.print(array[j] + " ");
+            }
+        }
+    }
+
+    private static void getArrayWithoutRange(int[] array, int a, int b) {
+        List<Integer> result = new ArrayList<>();
+        if (a < b) {
+            for (int i = 0; i < array.length; i++) {
+                if ((array[i] < a) | (array[i] > b)) {
+                    result.add(array[i]);
+                }
+            }
+        } else {
+//            throw new RuntimeException("Ты дурак????");
+            for (int i = 0; i < array.length; i++) {
+                if ((array[i] > a) | (array[i] < b)) {
+                    result.add(array[i]);
+                }
+            }
+        }
+        System.out.println(result);
     }
 }
