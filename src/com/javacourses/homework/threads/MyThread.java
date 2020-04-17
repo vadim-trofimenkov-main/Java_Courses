@@ -3,11 +3,11 @@ package com.javacourses.homework.threads;
 import java.util.Random;
 
 public class MyThread extends Thread {
-    Random random = new Random();
-    int i = random.nextInt(5001);
+    private Random random = new Random();
     @Override
     public void run(){
         try {
+            int i = 1000;
             Thread.sleep(i);
             System.out.println(Thread.currentThread().getName());
         }catch (InterruptedException e){
